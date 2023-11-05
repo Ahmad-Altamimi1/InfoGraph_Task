@@ -334,14 +334,20 @@ function MapComponent() {
                   <span>
                     {draggable ? (
                       <>
-                       <Button variant="outlined" color="error" onClick={toggleDraggable}>
-        Cansle
-      </Button>
-                       <Button variant="outlined" color="success" onClick={()=>{
-                        EditLocation(locationData);
-                       }}>
-        Save
-      </Button>
+                        <Button
+                          variant="outlined"
+                          color="error"
+                          onClick={toggleDraggable}>
+                          cancel
+                        </Button>
+                        <Button
+                          variant="outlined"
+                          color="success"
+                          onClick={() => {
+                            EditLocation(locationData);
+                          }}>
+                          Save
+                        </Button>
                       </>
                     ) : (
                       <>
@@ -368,7 +374,7 @@ function MapComponent() {
                       </>
                     )}
                   </span>
-                  <br/>
+                  <br />
                   <span style={{ fontSize: "20px" }}>
                     Name: {location.Name}
                     <br />
