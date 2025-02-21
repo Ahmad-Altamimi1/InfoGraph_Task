@@ -1,9 +1,10 @@
 import React from "react";
-import Map from "./map"; // Import your Map component
+import Map from "./map";
 
 function App() {
   return (
     <div className="App">
+      <div children={<>hi</>} />
       <Map />
     </div>
   );
